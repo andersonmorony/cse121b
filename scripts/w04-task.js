@@ -3,7 +3,7 @@
 /* Profile Object  */
 const myProfile = {
     name: "Anderson Moroni Ramos",
-    photo: '../images/me.jpg',
+    photo: './images/me.jpg',
     favoriteFoods: [
         'Rice',
         'Pizza',
