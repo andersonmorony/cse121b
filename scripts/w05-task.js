@@ -22,7 +22,6 @@ const displayTemples = async (temples) => {
 async function getTemples() {
     const resp = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json')
     const data = await resp.json();
-    console.table(data)
     data.forEach(temple => templeList.push(temple))
     displayTemples(templeList)
 }
