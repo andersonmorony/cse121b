@@ -10,8 +10,4 @@ const SetItem = (name, object) => {
     localStorage.setItem(name, JSON.stringify(items))
 }
 
-const UpdateItem = (name, object) => {
-    
-}
-
-export default { GetItem, SetItem, UpdateItem }
+export default { GetItem, SetItem }

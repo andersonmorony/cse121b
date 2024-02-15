@@ -5,6 +5,7 @@ const Save = () => {
     const description = document.getElementById("description").value;
     const type = document.getElementById("type").value;
     const CreatedDate = document.getElementById("dateCreated").value
+    let times = document.getElementById("times").value
     const newGoal = {
         name,
         description,
@@ -14,6 +15,20 @@ const Save = () => {
 
     if(name == '' || description == '' || type == '') {
         ErrorMessage(true)
+        return false;
+    }
+
+    if(type != 103)
+    {
+        times = 0;
+    }
+
+    console.log(type)
+    console.log(times)
+
+    if(type == 103 && times == '')
+    {
+        ErrorMessage(true);
         return false;
     }
 
